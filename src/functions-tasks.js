@@ -111,7 +111,7 @@ function memoize(func) {
   let cached = null;
   let result = false;
 
-  return function () {
+  return function memoizefunc() {
     if (!result) {
       cached = func();
       result = true;
